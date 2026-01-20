@@ -6,11 +6,16 @@
 
 body {
     background: linear-gradient(135deg, #5a5a5a 0%, #4d4d4d 50%, #3e3e3e 100%);
-    font-family: "Special Gothic Expanded One", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
 }
+
 
 body::before {
     content: '';
@@ -44,7 +49,6 @@ body::before {
     z-index: 100;
     letter-spacing: 0.1em;
     text-shadow: 0 0.25rem 1rem rgba(231, 57, 26, 0.4);
-    -webkit-text-stroke: 0.2rem rgba(0, 0, 0, 0.7);
 }
 
 main {
