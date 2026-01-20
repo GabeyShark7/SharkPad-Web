@@ -122,7 +122,7 @@ main {
 }
 
 .button_secondary {
-    bcolor: white;
+    color: white;
     background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     font-size: clamp(1.25rem, 2.5vw, 2rem);
     font-weight: bolder;
