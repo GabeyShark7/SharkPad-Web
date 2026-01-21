@@ -49,15 +49,25 @@
 <a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0/SharkPad-1.0.0-Linux-x86_64.AppImage">
 <button class="button_main">Download for Linux</button>
 </a>
-<a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0-mac/SharkPad-Mac.zip">
-<button class="button_main button_secondary">Download for MacOS</button>
+<div class="macos_dropdown">
+<button class="button_main button_secondary" onclick="toggleMacMenu(event)">Download for MacOS ▼</button>
+<div class="macos_menu" id="macosMenu">
+<a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0-mac/SharkPad-Mac.zip" class="macos_option">
+<span class="option_title">Apple Silicon (M1/M2/M3)</span>
+<span class="option_subtitle">ARM64 Architecture</span>
 </a>
+<a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0-mac/SharkPad-Mac-x86_64.zip" class="macos_option">
+<span class="option_title">Intel Chip</span>
+<span class="option_subtitle">x86_64 Architecture</span>
+</a>
+</div>
+</div>
 </div>
 <div class="download_info">
 <strong>Version 1.0</strong><br>
 Windows: ZIP Archive • Extract and run the application<br>
 Linux: x86_64 AppImage • Compatible with most modern Linux distributions<br>
-MacOS *INTEL CHIP ONLY*: ZIP Archive • Extract and follow further instruction<br>
+MacOS: ZIP Archive • Choose your chip type • Extract and follow further instruction<br>
 Tested by D. Nourse
 </div>
 </div>
@@ -65,5 +75,23 @@ Tested by D. Nourse
 <footer>
 <p>SharkPad • All Rights Reserved • 2026</p>
 </footer>
+
+<script>
+function toggleMacMenu(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  const menu = document.getElementById('macosMenu');
+  menu.classList.toggle('show');
+}
+
+// Close the dropdown if clicked outside
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('macosMenu');
+  const dropdown = document.querySelector('.macos_dropdown');
+  if (!dropdown.contains(e.target)) {
+    menu.classList.remove('show');
+  }
+});
+</script>
 </body>
 </html>
