@@ -15,32 +15,8 @@
 <nav class="site_nav">SharkPad</nav>
 </header>
 <main>
+<div class="hero_section">
 <img src="images/shark_pad_icon.png" alt="SharkPad Icon" class="shark_pic">
-<div class="description">
-<h2>Your All-in-One Productivity Companion</h2>
-<p>SharkPad is a versatile notepad and drawing environment designed for students, teachers, and anyone looking to organize their work efficiently. Whether you're jotting down notes, managing school assignments, sketching ideas, or planning projects, SharkPad combines text editing, drawing, and AI in a single intuitive interface.</p>
-</div>
-<div class="features">
-<div class="feature">
-<h3>Text Editing</h3>
-<p>Create, edit, and save notes or documents quickly</p>
-</div>
-<div class="feature">
-<h3>Drawing Tools</h3>
-<p>Sketch diagrams, illustrations, or annotations directly within your workspace</p>
-</div>
-<div class="feature">
-<h3>AI Integration</h3>
-<p>Capture voice and sounds simultaneously and summarize your text with a click of a button</p>
-</div>
-<div class="feature">
-<h3>Multi-Purpose</h3>
-<p>Perfect for school work, teaching materials, brainstorming, or general productivity</p>
-</div>
-</div>
-<div class="tagline">
-<p>A simple lightweight, user-friendly tool for creating ideas, doing tasks, and constructing work while being one app for everything you need to do.</p>
-</div>
 <div class="download_section">
 <div class="download_buttons">
 <a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0-windows/SharkPad-Windows.zip">
@@ -71,25 +47,46 @@ MacOS: ZIP Archive • Choose your chip type • Extract and follow further inst
 Tested by D. Nourse
 </div>
 </div>
+</div>
+<div class="description">
+<h2>Your All-in-One Productivity Companion</h2>
+<p>SharkPad is a versatile notepad and drawing environment designed for students, teachers, and anyone looking to organize their work efficiently. Whether you're jotting down notes, managing school assignments, sketching ideas, or planning projects, SharkPad combines text editing, drawing, and AI in a single intuitive interface.</p>
+</div>
+<div class="features">
+<div class="feature">
+<h3>Text Editing</h3>
+<p>Create, edit, and save notes or documents quickly</p>
+</div>
+<div class="feature">
+<h3>Drawing Tools</h3>
+<p>Sketch diagrams, illustrations, or annotations directly within your workspace</p>
+</div>
+<div class="feature">
+<h3>AI Integration</h3>
+<p>Capture voice and sounds simultaneously and summarize your text with a click of a button</p>
+</div>
+<div class="feature">
+<h3>Multi-Purpose</h3>
+<p>Perfect for school work, teaching materials, brainstorming, or general productivity</p>
+</div>
+</div>
 </main>
 <footer>
 <p>SharkPad • All Rights Reserved • 2026</p>
 </footer>
-
 <script>
 function toggleMacMenu(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  const menu = document.getElementById('macosMenu');
-  menu.classList.toggle('show');
+e.preventDefault();
+e.stopPropagation();
+const menu = document.getElementById('macosMenu');
+menu.classList.toggle('show');
 }
 
-// Close the dropdown if clicked outside
 document.addEventListener('click', function(e) {
-  const menu = document.getElementById('macosMenu');
-  const dropdown = document.querySelector('.macos_dropdown');
-  if (!dropdown.contains(e.target)) {
-    menu.classList.remove('show');
+const menu = document.getElementById('macosMenu');
+const dropdown = document.querySelector('.macos_dropdown');
+if (!dropdown.contains(e.target)) {
+menu.classList.remove('show');
   }
 });
 </script>
