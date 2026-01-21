@@ -190,10 +190,9 @@ main {
 .macos_menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.5rem);
     left: 0;
     right: 0;
-    margin-top: 0.5rem;
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
     border-radius: 0.75rem;
     box-shadow: 
@@ -203,6 +202,7 @@ main {
     overflow: hidden;
     z-index: 1000;
     min-width: 100%;
+    width: max-content;
 }
 
 .macos_menu.show {
