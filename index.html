@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SharkPad</title>
+<meta name="description" content="SharkPad: notes, drawing, and voice dictation in one window. Free and open source for Windows, macOS, and Linux.">
 <link rel="icon" type="image/x-icon" href="images/shark_pad_icon.ico">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,27 +13,30 @@
 </head>
 <body>
 <header>
-<nav class="site_nav">SharkPad</nav>
+<nav class="site_nav">
+<span class="site_title">SharkPad</span>
+<a class="nav_github" href="https://github.com/GabeyShark7/SharkPad" target="_blank" rel="noopener">GitHub</a>
+</nav>
 </header>
 <main>
 <div class="hero_section">
 <img src="images/shark_pad_icon.png" alt="SharkPad Icon" class="shark_pic">
 <div class="download_section">
 <div class="download_buttons">
-<a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0-windows/SharkPad-Windows.zip">
+<a href="https://github.com/GabeyShark7/SharkPad/releases/latest/download/SharkPad-Windows.zip">
 <button class="button_main">Download for Windows</button>
 </a>
-<a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0/SharkPad-1.0.0-Linux-x86_64.AppImage">
+<a href="https://github.com/GabeyShark7/SharkPad/releases/latest/download/SharkPad-Linux-x86_64.AppImage">
 <button class="button_main">Download for Linux</button>
 </a>
 <div class="macos_dropdown">
 <button class="button_main button_secondary" onclick="toggleMacMenu(event)">Download for MacOS ▼</button>
 <div class="macos_menu" id="macosMenu">
-<a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0-mac/SharkPad-Mac.zip" class="macos_option">
-<span class="option_title">Apple Silicon (M1/M2/M3)</span>
+<a href="https://github.com/GabeyShark7/SharkPad/releases/latest/download/SharkPad-Mac-AppleSilicon.zip" class="macos_option">
+<span class="option_title">Apple Silicon (M1 and newer)</span>
 <span class="option_subtitle">ARM64 Architecture</span>
 </a>
-<a href="https://github.com/GabeyShark7/SharkPad-Web/releases/download/v1.0.0-mac/SharkPad-Mac-x86_64.zip" class="macos_option">
+<a href="https://github.com/GabeyShark7/SharkPad/releases/latest/download/SharkPad-Mac-Intel.zip" class="macos_option">
 <span class="option_title">Intel Chip</span>
 <span class="option_subtitle">x86_64 Architecture</span>
 </a>
@@ -40,11 +44,12 @@
 </div>
 </div>
 <div class="download_info">
-<strong>Version 1.0</strong><br>
-Windows: ZIP Archive • Extract and run the application<br>
-Linux: x86_64 AppImage • Compatible with most modern Linux distributions<br>
-MacOS: ZIP Archive • Choose your chip type • Extract and follow further instruction<br>
-Tested by D. Nourse
+<strong>Version 1.1.1</strong><br>
+Windows: ZIP Archive • Extract and run SharkPad.exe<br>
+Linux: x86_64 AppImage • Mark it executable, then run it<br>
+MacOS: ZIP Archive • Choose your chip type • The first time, right-click SharkPad and choose Open<br>
+Tested by D. Nourse<br>
+<a class="info_link" href="https://github.com/GabeyShark7/SharkPad/releases" target="_blank" rel="noopener">All releases and source code</a>
 </div>
 </div>
 </div>
@@ -62,17 +67,36 @@ Tested by D. Nourse
 <p>Sketch diagrams, illustrations, or annotations directly within your workspace</p>
 </div>
 <div class="feature">
-<h3>AI Integration</h3>
-<p>Capture voice and sounds simultaneously and summarize your text with a click of a button</p>
+<h3>Voice and AI</h3>
+<p>Dictate while you type and draw, then have the AI Teacher explain your notes with one click</p>
 </div>
 <div class="feature">
 <h3>Multi-Purpose</h3>
 <p>Perfect for school work, teaching materials, brainstorming, or general productivity</p>
 </div>
 </div>
+<section class="screenshots">
+<h2>See It in Action</h2>
+<img src="images/screenshots/dark.png" alt="SharkPad in dark mode with lecture notes and a colored benzene ring sketch" class="shot shot_main" loading="lazy">
+<div class="shot_row">
+<figure>
+<img src="images/screenshots/light.png" alt="SharkPad in light mode" class="shot" loading="lazy">
+<figcaption>Light mode</figcaption>
+</figure>
+<figure>
+<img src="images/screenshots/ai-teacher-setup.png" alt="AI Teacher setup dialog" class="shot" loading="lazy">
+<figcaption>AI Teacher setup with a free Groq key</figcaption>
+</figure>
+</div>
+</section>
+<section class="open_source">
+<h2>Free and Open Source</h2>
+<p>SharkPad is released under the MIT License. Read the code, report a bug, or build it yourself.</p>
+<a href="https://github.com/GabeyShark7/SharkPad" target="_blank" rel="noopener"><button class="button_main button_github">View on GitHub</button></a>
+</section>
 </main>
 <footer>
-<p>SharkPad • All Rights Reserved • 2026</p>
+<p>SharkPad • Created by <a href="https://gabealvarado.org" target="_blank" rel="noopener">Gabe Alvarado</a> • <a href="https://github.com/GabeyShark7/SharkPad/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> • <a href="https://github.com/GabeyShark7/SharkPad" target="_blank" rel="noopener">GitHub</a> • 2026</p>
 </footer>
 <script>
 function toggleMacMenu(e) {
